@@ -127,7 +127,7 @@ Kohana::$config->attach(new Config_File);
 Kohana::modules(array(
     'di' => DOCROOT . DIRECTORY_SEPARATOR . 'vendor/zeelot/kohana-dependencies',
     'encrypt' => DOCROOT . DIRECTORY_SEPARATOR . 'vendor/pgolasz/kohana-encrypt',
-    'skanstull' => MODPATH . 'skanstull'
+    'skanstull' => MODPATH . 'skanstull',
     // 'encrypt'    => MODPATH.'encrypt',    // Encryption supprt
     // 'auth'       => MODPATH.'auth',       // Basic authentication
     // 'cache'      => MODPATH.'cache',      // Caching with multiple backends
@@ -135,7 +135,7 @@ Kohana::modules(array(
     // 'database'   => MODPATH.'database',   // Database access
     // 'image'      => MODPATH.'image',      // Image manipulation
     // 'minion'     => MODPATH.'minion',     // CLI Tasks
-    // 'orm'        => MODPATH.'orm',        // Object Relationship Mapping
+    // 'orm' => MODPATH . 'orm',        // Object Relationship Mapping
     // 'pagination' => MODPATH.'pagination', // Pagination
     // 'unittest'   => MODPATH.'unittest',   // Unit testing
     // 'userguide'  => MODPATH.'userguide',  // User guide and API documentation
@@ -162,6 +162,11 @@ Kohana::modules(array(
  * to http://www.example.com will still reveal this cookie
  */
 // Cookie::$secure = isset($_SERVER['HTTPS']) AND $_SERVER['HTTPS'] == 'on' ? TRUE : FALSE;
+
+/**
+ * Load settings from .env file
+ */
+$dotenv = (new Dotenv\Dotenv(DOCROOT))->load();
 
 /**
  * Set the routes. Each route must have a minimum of a name, a URI and a set of
