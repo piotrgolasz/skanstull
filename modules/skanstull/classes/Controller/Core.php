@@ -8,11 +8,7 @@
 
 class Controller_Core extends Controller
 {
-    /**
-     * @var Dependency_Container DI
-     */
-    protected $di;
-
+    use Traits_Injectdi;
     /**
      * Controller_Core constructor.
      * @param Request $request
@@ -22,10 +18,7 @@ class Controller_Core extends Controller
      */
     public function __construct(Request $request, Response $response)
     {
-        // Creation Code
-        $this->di = new Dependency_Container(Dependency_Definition_List::factory()
-            ->from_array(Kohana::$config->load('di')->as_array()));
-
+        $this->setDI();
         parent::__construct($request, $response);
     }
 }
