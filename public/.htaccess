@@ -41,9 +41,9 @@ ServerSignature Off
     Header set X-Permitted-Cross-Domain-Policies "none"
 
     ###CSP
-    Header set Content-Security-Policy: "default-src 'self' data:"
-    Header set X-Content-Security-Policy: "default-src 'self' data:"
-    Header set X-WebKit-CSP: "default-src 'self' data:"
+    Header set Content-Security-Policy: "default-src 'self' data:; style-src 'self' data: 'unsafe-inline'"
+    Header set X-Content-Security-Policy: "default-src 'self' data:; style-src 'self' data: 'unsafe-inline'"
+    Header set X-WebKit-CSP: "default-src 'self' data:; style-src 'self' data: 'unsafe-inline'"
 </IfModule>
 
 # Installation directory
