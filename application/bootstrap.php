@@ -22,7 +22,7 @@ else
  * @link http://kohanaframework.org/guide/using.configuration
  * @link http://www.php.net/manual/timezones
  */
-date_default_timezone_set('America/Chicago');
+date_default_timezone_set('Europe/Stockholm');
 
 /**
  * Set the default locale.
@@ -59,7 +59,7 @@ ini_set('unserialize_callback_func', 'spl_autoload_call');
 /**
  * Enable composer autoload libraries
  */
-// require DOCROOT . '/vendor/autoload.php';
+require DOCROOT . '/vendor/autoload.php';
 
 /**
  * Set the mb_substitute_character to "none"
