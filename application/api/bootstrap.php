@@ -129,9 +129,9 @@ Kohana::$config->attach(new Config_File);
  */
 Kohana::modules(array(
     'di' => DOCROOT . DIRECTORY_SEPARATOR . 'vendor/zeelot/kohana-dependencies',
+    'database' => MODPATH . 'database',   // Database access
     'encrypt' => DOCROOT . DIRECTORY_SEPARATOR . 'vendor/pgolasz/kohana-encrypt',
     'jelly' => DOCROOT . DIRECTORY_SEPARATOR . 'vendor/piotrgolasz/jelly',
-    'jelly-auth-bcrypt' => DOCROOT . DIRECTORY_SEPARATOR . 'vendor/piotrgolasz/jelly-auth-bcrypt',
     'skanstull' => MODPATH . 'skanstull',
     // 'encrypt'    => MODPATH.'encrypt',    // Encryption supprt
     // 'auth'       => MODPATH.'auth',       // Basic authentication
@@ -147,31 +147,31 @@ Kohana::modules(array(
 ));
 
 /**
+ * Load settings from .env file
+ */
+$dotenv = (new Dotenv\Dotenv(DOCROOT))->load();
+
+/**
  * Cookie Salt
  * @see  http://kohanaframework.org/3.3/guide/kohana/cookies
  *
  * If you have not defined a cookie salt in your Cookie class then
  * uncomment the line below and define a preferrably long salt.
  */
-// Cookie::$salt = NULL;
+Cookie::$salt = getenv('COOKIE_SALT');
 /**
  * Cookie HttpOnly directive
  * If set to true, disallows cookies to be accessed from JavaScript
  * @see https://en.wikipedia.org/wiki/Session_hijacking
  */
-// Cookie::$httponly = TRUE;
+Cookie::$httponly = TRUE;
 /**
  * If website runs on secure protocol HTTPS, allows cookies only to be transmitted
  * via HTTPS.
  * Warning: HSTS must also be enabled in .htaccess, otherwise first request
  * to http://www.example.com will still reveal this cookie
  */
-// Cookie::$secure = isset($_SERVER['HTTPS']) AND $_SERVER['HTTPS'] == 'on' ? TRUE : FALSE;
-
-/**
- * Load settings from .env file
- */
-$dotenv = (new Dotenv\Dotenv(DOCROOT))->load();
+Cookie::$secure = isset($_SERVER['HTTPS']) AND $_SERVER['HTTPS'] == 'on' ? TRUE : FALSE;
 
 /**
  * Set the routes. Each route must have a minimum of a name, a URI and a set of
