@@ -127,6 +127,8 @@ Kohana::$config->attach(new Config_File);
 Kohana::modules(array(
     'di' => DOCROOT . DIRECTORY_SEPARATOR . 'vendor/zeelot/kohana-dependencies',
     'encrypt' => DOCROOT . DIRECTORY_SEPARATOR . 'vendor/pgolasz/kohana-encrypt',
+    'jelly' => DOCROOT . DIRECTORY_SEPARATOR . 'vendor/piotrgolasz/jelly',
+    'jelly-auth-bcrypt' => DOCROOT . DIRECTORY_SEPARATOR . 'vendor/piotrgolasz/jelly-auth-bcrypt',
     'skanstull' => MODPATH . 'skanstull',
     // 'encrypt'    => MODPATH.'encrypt',    // Encryption supprt
     // 'auth'       => MODPATH.'auth',       // Basic authentication
