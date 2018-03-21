@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "46245e08cc81d2d7492e2c15f9466a9d",
+    "content-hash": "8df4f241ef766f0e4e05c8d7ea8ed616",
     "packages": [
         {
             "name": "composer/installers",
@@ -1353,6 +1353,88 @@
                 "xunit"
             ],
             "time": "2015-10-02T06:51:40+00:00"
+        },
+        {
+            "name": "piotrgolasz/jelly",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/piotrgolasz/jelly.git",
+                "reference": "d05ae9ac592a12479f8d6bf2f572ae2252e56a97"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/piotrgolasz/jelly/zipball/d05ae9ac592a12479f8d6bf2f572ae2252e56a97",
+                "reference": "d05ae9ac592a12479f8d6bf2f572ae2252e56a97",
+                "shasum": ""
+            },
+            "type": "library",
+            "license": [
+                "BSD"
+            ],
+            "authors": [
+                {
+                    "name": "Piotr Gołasz",
+                    "role": "developer"
+                },
+                {
+                    "name": "creatoro",
+                    "role": "developer"
+                },
+                {
+                    "name": "Jonathan Geiger",
+                    "email": "me@gigr.ca",
+                    "role": "developer"
+                }
+            ],
+            "description": "Jelly ORM for Kohana/Koseven",
+            "keywords": [
+                "jelly",
+                "koseven",
+                "orm"
+            ],
+            "support": {
+                "source": "https://github.com/piotrgolasz/jelly/tree/1.1.1"
+            },
+            "time": "2018-03-21T18:15:19+00:00"
+        },
+        {
+            "name": "piotrgolasz/jelly-auth-bcrypt",
+            "version": "0.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/piotrgolasz/jelly-auth-bcrypt.git",
+                "reference": "0e9b9b6448abc685d8d47364382b8801cb3812e5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/piotrgolasz/jelly-auth-bcrypt/zipball/0e9b9b6448abc685d8d47364382b8801cb3812e5",
+                "reference": "0e9b9b6448abc685d8d47364382b8801cb3812e5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "type": "library",
+            "license": [
+                "BSD"
+            ],
+            "authors": [
+                {
+                    "name": "Piotr Gołasz",
+                    "role": "developer"
+                }
+            ],
+            "description": "Bcrypt auth for Kohana/Koseven",
+            "keywords": [
+                "auth",
+                "bcrypt",
+                "koseven"
+            ],
+            "support": {
+                "source": "https://github.com/piotrgolasz/jelly-auth-bcrypt/tree/0.0.2"
+            },
+            "time": "2018-03-21T18:28:21+00:00"
         },
         {
             "name": "psr/http-message",

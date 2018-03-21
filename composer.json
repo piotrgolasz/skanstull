@@ -24,6 +24,16 @@
       "role": "developer"
     }
   ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/piotrgolasz/jelly"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/piotrgolasz/jelly-auth-bcrypt"
+    }
+  ],
   "require": {
     "php": ">=7.0",
     "phpunit/phpunit": "3.7.24 - 4",
@@ -36,6 +46,8 @@
     "zeelot/kohana-dependencies": "0.7.x-dev",
     "guzzlehttp/guzzle": "6.3.*",
     "pgolasz/kohana-encrypt" : "1.0.3",
-    "vlucas/phpdotenv" : "v2.4.0"
+    "vlucas/phpdotenv" : "v2.4.0",
+    "piotrgolasz/jelly" : "1.1.1",
+    "piotrgolasz/jelly-auth-bcrypt" : "0.0.2"
   }
 }
