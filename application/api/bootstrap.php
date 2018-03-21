@@ -109,12 +109,15 @@ if (isset($_SERVER['KOHANA_ENV']))
  */
 Kohana::init(array(
     'base_url' => null,
+    'caching' => Kohana::$environment == Kohana::PRODUCTION,
+    'errors' => Kohana::$environment == Kohana::DEVELOPMENT,
+    'profile' => Kohana::$environment == Kohana::DEVELOPMENT,
 ));
 
 /**
  * Attach the file write to logging. Multiple writers are supported.
  */
-Kohana::$log->attach(new Log_File(APPPATH . 'logs'));
+Kohana::$log->attach(new Log_File(MODPATH . 'skanstull/logs'));
 
 /**
  * Attach a file reader to config. Multiple readers are supported.

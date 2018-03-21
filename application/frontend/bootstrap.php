@@ -3,17 +3,17 @@
 // -- Environment setup --------------------------------------------------------
 
 // Load the core Kohana class
-require SYSPATH.'classes/Kohana/Core'.EXT;
+require SYSPATH . 'classes/Kohana/Core' . EXT;
 
-if (is_file(APPPATH.'classes/Kohana'.EXT))
+if (is_file(APPPATH . 'classes/Kohana' . EXT))
 {
-	// Application extends the core
-	require APPPATH.'classes/Kohana'.EXT;
+    // Application extends the core
+    require APPPATH . 'classes/Kohana' . EXT;
 }
 else
 {
-	// Load empty core extension
-	require SYSPATH.'classes/Kohana'.EXT;
+    // Load empty core extension
+    require SYSPATH . 'classes/Kohana' . EXT;
 }
 
 /**
@@ -77,8 +77,8 @@ I18n::lang('en-us');
 
 if (isset($_SERVER['SERVER_PROTOCOL']))
 {
-	// Replace the default protocol.
-	HTTP::$protocol = $_SERVER['SERVER_PROTOCOL'];
+    // Replace the default protocol.
+    HTTP::$protocol = $_SERVER['SERVER_PROTOCOL'];
 }
 
 /**
@@ -89,7 +89,7 @@ if (isset($_SERVER['SERVER_PROTOCOL']))
  */
 if (isset($_SERVER['KOHANA_ENV']))
 {
-	Kohana::$environment = constant('Kohana::'.strtoupper($_SERVER['KOHANA_ENV']));
+    Kohana::$environment = constant('Kohana::' . strtoupper($_SERVER['KOHANA_ENV']));
 }
 
 /**
@@ -108,13 +108,13 @@ if (isset($_SERVER['KOHANA_ENV']))
  * - boolean  expose      set the X-Powered-By header                        FALSE
  */
 Kohana::init(array(
-	'base_url'   => '/kohana/',
+    'base_url' => null,
 ));
 
 /**
  * Attach the file write to logging. Multiple writers are supported.
  */
-Kohana::$log->attach(new Log_File(APPPATH.'logs'));
+Kohana::$log->attach(new Log_File(MODPATH . 'skanstull/logs'));
 
 /**
  * Attach a file reader to config. Multiple readers are supported.
@@ -125,23 +125,23 @@ Kohana::$config->attach(new Config_File);
  * Enable modules. Modules are referenced by a relative or absolute path.
  */
 Kohana::modules(array(
-	// 'encrypt'    => MODPATH.'encrypt',    // Encryption supprt
-	// 'auth'       => MODPATH.'auth',       // Basic authentication
-	// 'cache'      => MODPATH.'cache',      // Caching with multiple backends
-	// 'codebench'  => MODPATH.'codebench',  // Benchmarking tool
-	// 'database'   => MODPATH.'database',   // Database access
-	// 'image'      => MODPATH.'image',      // Image manipulation
-	// 'minion'     => MODPATH.'minion',     // CLI Tasks
-	// 'orm'        => MODPATH.'orm',        // Object Relationship Mapping
-	// 'pagination' => MODPATH.'pagination', // Pagination
-	// 'unittest'   => MODPATH.'unittest',   // Unit testing
-	// 'userguide'  => MODPATH.'userguide',  // User guide and API documentation
-	));
+    // 'encrypt'    => MODPATH.'encrypt',    // Encryption supprt
+    // 'auth'       => MODPATH.'auth',       // Basic authentication
+    // 'cache'      => MODPATH.'cache',      // Caching with multiple backends
+    // 'codebench'  => MODPATH.'codebench',  // Benchmarking tool
+    // 'database'   => MODPATH.'database',   // Database access
+    // 'image'      => MODPATH.'image',      // Image manipulation
+    // 'minion'     => MODPATH.'minion',     // CLI Tasks
+    // 'orm'        => MODPATH.'orm',        // Object Relationship Mapping
+    // 'pagination' => MODPATH.'pagination', // Pagination
+    // 'unittest'   => MODPATH.'unittest',   // Unit testing
+    // 'userguide'  => MODPATH.'userguide',  // User guide and API documentation
+));
 
 /**
  * Cookie Salt
  * @see  http://kohanaframework.org/3.3/guide/kohana/cookies
- * 
+ *
  * If you have not defined a cookie salt in your Cookie class then
  * uncomment the line below and define a preferrably long salt.
  */
@@ -165,7 +165,7 @@ Kohana::modules(array(
  * defaults for the URI.
  */
 Route::set('default', '(<controller>(/<action>(/<id>)))')
-	->defaults(array(
-		'controller' => 'welcome',
-		'action'     => 'index',
-	));
+    ->defaults(array(
+        'controller' => 'welcome',
+        'action' => 'index',
+    ));
