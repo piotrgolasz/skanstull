@@ -125,6 +125,7 @@ Kohana::$config->attach(new Config_File);
  * Enable modules. Modules are referenced by a relative or absolute path.
  */
 Kohana::modules(array(
+    'di' => MODPATH . 'kohana-di',
     'skanstull' => MODPATH . 'skanstull'
     // 'encrypt'    => MODPATH.'encrypt',    // Encryption supprt
     // 'auth'       => MODPATH.'auth',       // Basic authentication

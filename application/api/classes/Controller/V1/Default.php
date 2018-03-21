@@ -6,9 +6,8 @@
  * Date: 21.03.2018
  * Time: 11:56
  */
-class Controller_V1_Default extends Controller implements Interfaces_Restapi
+class Controller_V1_Default extends Controller_Core implements Interfaces_Restapi
 {
-
     /**
      * API GET
      * @return mixed
