@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "32b0acfc8110793bdffa1c45c87ca154",
+    "content-hash": "28db6101a398fe6334e6783608994407",
     "packages": [
         {
             "name": "composer/installers",
@@ -542,6 +542,41 @@
                 "jwt"
             ],
             "time": "2017-09-01T08:23:26+00:00"
+        },
+        {
+            "name": "pgolasz/kohana-encrypt",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/piotrgolasz/kohana-encrypt.git",
+                "reference": "ebfaadbadd894401fdc8243e59b86f5e15854d68"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/piotrgolasz/kohana-encrypt/zipball/ebfaadbadd894401fdc8243e59b86f5e15854d68",
+                "reference": "ebfaadbadd894401fdc8243e59b86f5e15854d68",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Piotr Gołasz",
+                    "email": "pgolasz@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Encryption module for Kohana 3.3. Uses Encrypt-then-MAC scheme with OPENSSL (AES) and Encrypt-then-Sign (RSA).",
+            "homepage": "https://github.com/piotrgolasz/kohana-encrypt",
+            "keywords": [
+                "encryption",
+                "kohana",
+                "koseven",
+                "module",
+                "openssl",
+                "rsa"
+            ],
+            "time": "2017-08-29T12:36:08+00:00"
         },
         {
             "name": "phing/phing",

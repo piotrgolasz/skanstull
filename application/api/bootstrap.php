@@ -126,6 +126,7 @@ Kohana::$config->attach(new Config_File);
  */
 Kohana::modules(array(
     'di' => DOCROOT . DIRECTORY_SEPARATOR . 'vendor/zeelot/kohana-dependencies',
+    'encrypt' => DOCROOT . DIRECTORY_SEPARATOR . 'vendor/pgolasz/kohana-encrypt',
     'skanstull' => MODPATH . 'skanstull'
     // 'encrypt'    => MODPATH.'encrypt',    // Encryption supprt
     // 'auth'       => MODPATH.'auth',       // Basic authentication

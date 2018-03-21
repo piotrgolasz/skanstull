@@ -34,6 +34,7 @@
     "lcobucci/jwt": "3.2.*",
     "tobscure/json-api": "v0.4.1",
     "zeelot/kohana-dependencies": "0.7.x-dev",
-    "guzzlehttp/guzzle": "6.3.*"
+    "guzzlehttp/guzzle": "6.3.*",
+    "pgolasz/kohana-encrypt" : "1.0.3"
   }
 }
