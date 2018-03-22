@@ -31,10 +31,6 @@
     },
     {
       "type": "vcs",
-      "url": "https://github.com/piotrgolasz/jelly-auth-bcrypt"
-    },
-    {
-      "type": "vcs",
       "url": "https://github.com/piotrgolasz/tasks-migrations"
     }
   ],
@@ -52,7 +48,6 @@
     "pgolasz/kohana-encrypt" : "1.0.3",
     "vlucas/phpdotenv" : "v2.4.0",
     "piotrgolasz/jelly" : "1.1.1",
-    "piotrgolasz/jelly-auth-bcrypt" : "0.0.2",
     "piotrgolasz/tasks-migrations" : "0.0.2"
   }
 }
