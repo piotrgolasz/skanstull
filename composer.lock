@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "8df4f241ef766f0e4e05c8d7ea8ed616",
+    "content-hash": "9d42a06db2ca7e00246d935e6040e273",
     "packages": [
         {
             "name": "composer/installers",
@@ -1435,6 +1435,64 @@
                 "source": "https://github.com/piotrgolasz/jelly-auth-bcrypt/tree/0.0.2"
             },
             "time": "2018-03-21T18:28:21+00:00"
+        },
+        {
+            "name": "piotrgolasz/tasks-migrations",
+            "version": "0.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/piotrgolasz/tasks-migrations.git",
+                "reference": "cac67fc31722892e7bd65377480a754e1380aa66"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/piotrgolasz/tasks-migrations/zipball/cac67fc31722892e7bd65377480a754e1380aa66",
+                "reference": "cac67fc31722892e7bd65377480a754e1380aa66",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.3/develop": "3.3.x-dev"
+                }
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Lorenzo Pisani",
+                    "email": "zeelot3k@gmail.com",
+                    "role": "developer"
+                },
+                {
+                    "name": "Matt Button",
+                    "email": "matthew@sigswitch.com",
+                    "role": "developer"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/kohana-minion/tasks-migrations/graphs/contributors",
+                    "role": "contributor"
+                }
+            ],
+            "description": "Migration tasks for the kohana-minion cli framework",
+            "homepage": "https://github.com/kohana-minion/tasks-migrations",
+            "keywords": [
+                "database",
+                "framework",
+                "kohana",
+                "migrations",
+                "tasks"
+            ],
+            "support": {
+                "issues": "https://github.com/kohana-minion/tasks-migrations/issues",
+                "source": "https://github.com/kohana-minion/tasks-migrations"
+            },
+            "time": "2018-03-22T11:07:27+00:00"
         },
         {
             "name": "psr/http-message",
