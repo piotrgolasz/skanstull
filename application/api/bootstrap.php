@@ -127,7 +127,7 @@ Kohana::$config->attach(new Config_File);
 /**
  * Enable modules. Modules are referenced by a relative or absolute path.
  */
-Kohana::modules(array(
+Kohana::modules([
     'di' => DOCROOT . DIRECTORY_SEPARATOR . 'vendor/zeelot/kohana-dependencies',
     'database' => MODPATH . 'database',   // Database access
     'encrypt' => DOCROOT . DIRECTORY_SEPARATOR . 'vendor/pgolasz/kohana-encrypt',
@@ -144,7 +144,7 @@ Kohana::modules(array(
     // 'pagination' => MODPATH.'pagination', // Pagination
     // 'unittest'   => MODPATH.'unittest',   // Unit testing
     // 'userguide'  => MODPATH.'userguide',  // User guide and API documentation
-));
+]);
 
 /**
  * Load settings from .env file
