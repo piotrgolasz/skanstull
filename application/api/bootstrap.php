@@ -128,10 +128,12 @@ Kohana::$config->attach(new Config_File);
  * Enable modules. Modules are referenced by a relative or absolute path.
  */
 Kohana::modules([
+    'auth' => MODPATH . 'auth',       // Basic authentication
     'di' => DOCROOT . DIRECTORY_SEPARATOR . 'vendor/zeelot/kohana-dependencies',
     'database' => MODPATH . 'database',   // Database access
     'encrypt' => DOCROOT . DIRECTORY_SEPARATOR . 'vendor/pgolasz/kohana-encrypt',
     'jelly' => DOCROOT . DIRECTORY_SEPARATOR . 'vendor/piotrgolasz/jelly',
+    //'jelly-auth-argon' => MODPATH . 'jelly-auth-argon',
     'skanstull' => MODPATH . 'skanstull',
     // 'encrypt'    => MODPATH.'encrypt',    // Encryption supprt
     // 'auth'       => MODPATH.'auth',       // Basic authentication
