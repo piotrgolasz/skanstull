@@ -109,6 +109,7 @@ if (isset($_SERVER['KOHANA_ENV']))
  */
 Kohana::init(array(
     'base_url' => null,
+    'index_file' => FALSE
 ));
 
 /**
@@ -131,9 +132,8 @@ Kohana::modules(array(
     // 'codebench'  => MODPATH.'codebench',  // Benchmarking tool
     'database' => MODPATH . 'database',   // Database access
     // 'image'      => MODPATH.'image',      // Image manipulation
-    'flexible-migrations' => DOCROOT . DIRECTORY_SEPARATOR . 'vendor/piotrgolasz/kohana-flexible-migrations',
     'minion' => MODPATH . 'minion',     // CLI Tasks
-    'orm' => MODPATH . 'orm',        // Object Relationship Mapping
+    // 'orm' => MODPATH . 'orm',        // Object Relationship Mapping
     // 'pagination' => MODPATH.'pagination', // Pagination
     // 'unittest'   => MODPATH.'unittest',   // Unit testing
     // 'userguide'  => MODPATH.'userguide',  // User guide and API documentation

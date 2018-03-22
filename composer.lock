@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "23e107bc0d36937861f26c9aa8c2c627",
+    "content-hash": "8df4f241ef766f0e4e05c8d7ea8ed616",
     "packages": [
         {
             "name": "composer/installers",
@@ -1435,44 +1435,6 @@
                 "source": "https://github.com/piotrgolasz/jelly-auth-bcrypt/tree/0.0.2"
             },
             "time": "2018-03-21T18:28:21+00:00"
-        },
-        {
-            "name": "piotrgolasz/kohana-flexible-migrations",
-            "version": "0.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/piotrgolasz/kohana-flexible-migrations.git",
-                "reference": "0059335f2e10ccafd22d27c370515ffc7365d73e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/piotrgolasz/kohana-flexible-migrations/zipball/0059335f2e10ccafd22d27c370515ffc7365d73e",
-                "reference": "0059335f2e10ccafd22d27c370515ffc7365d73e",
-                "shasum": ""
-            },
-            "type": "library",
-            "license": [
-                "BSD"
-            ],
-            "authors": [
-                {
-                    "name": "Piotr Gołasz",
-                    "role": "developer"
-                },
-                {
-                    "name": "Fernando Petrelli (ferpetrelli)",
-                    "email": "fer.petrelli@gmail.com",
-                    "role": "developer"
-                }
-            ],
-            "description": "Migrations for Kohana/Koseven",
-            "keywords": [
-                "koseven"
-            ],
-            "support": {
-                "source": "https://github.com/piotrgolasz/kohana-flexible-migrations/tree/0.0.1"
-            },
-            "time": "2018-03-21T20:32:44+00:00"
         },
         {
             "name": "psr/http-message",
